@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+    "prebuild": "npm run generate:importmap && npm run generate:types",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
     "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
@@ -24,7 +25,7 @@
     "framer-motion": "^12.0.0",
     "graphql": "^16.8.1",
     "lucide-react": "^0.469.0",
-    "next": "latest",
+    "next": "^15.4.2",
     "payload": "beta",
     "react": "19.0.0",
     "react-dom": "19.0.0",
