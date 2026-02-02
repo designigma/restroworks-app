@@ -2,9 +2,16 @@ import { withPayload } from '@payloadcms/next/withPayload'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Your Next.js config here
+  // 1. Force Next.js to transpile these packages to fix "default.default" error
+  transpilePackages: [
+    '@payloadcms/next', 
+    '@payloadcms/richtext-lexical', 
+    'lucide-react'
+  ],
+  
+  // 2. Keep the compiler safe
   experimental: {
-    reactCompiler: false, // Turn off experimental compiler to be safe
+    reactCompiler: false,
   },
 }
 
