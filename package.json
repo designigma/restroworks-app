@@ -24,10 +24,10 @@
     "framer-motion": "^12.29.2",
     "graphql": "^16.8.1",
     "lucide-react": "^0.469.0",
-    "next": "^15.1.7",
-    "payload": "^3.0.0-beta.135",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "next": "15.1.7",
+    "payload": "3.0.0-beta.135",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "sharp": "0.32.6",
     "tailwind-merge": "^3.4.0"
   },
@@ -45,14 +45,11 @@
   "engines": {
     "node": "^18.20.2 || >=20.9.0"
   },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "npm:types-react@19.0.0-rc.1",
-      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
-    }
-  },
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "next": "15.1.7",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   }
 }
