@@ -10,10 +10,10 @@ export const HeroBlock = ({ heading, subheading, backgroundImage }: any) => {
       {backgroundImage?.url && (
         <Image
           src={backgroundImage.url}
-          alt={backgroundImage.alt || 'Hero Background'} // A11y: Uses alt text from CMS
+          alt={backgroundImage.alt || 'Hero Background'}
           fill
           className="object-cover opacity-50"
-          priority // Performance: Loads image immediately (LCP)
+          priority
         />
       )}
       <div className="relative z-10 text-center max-w-4xl px-4">

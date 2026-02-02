@@ -1,7 +1,7 @@
 import { Block } from 'payload';
 
 export const Hero: Block = {
-  slug: 'hero', // This is the ID used in the database
+  slug: 'hero',
   labels: {
     singular: 'Hero Section',
     plural: 'Hero Sections',
@@ -21,7 +21,7 @@ export const Hero: Block = {
     {
       name: 'backgroundImage',
       type: 'upload',
-      relationTo: 'media', // Matches your existing Media.ts collection
+      relationTo: 'media',
       required: true,
     },
   ],

@@ -1,8 +1,8 @@
 import { CollectionConfig } from 'payload';
 import { Hero } from '../blocks/Hero';
-import { Features } from '../blocks/Features';     // <--- Add Import
-import { CTA } from '../blocks/CTA';               // <--- Add Import
-import { Testimonial } from '../blocks/Testimonial'; // <--- Add Import
+import { Features } from '../blocks/Features';    
+import { CTA } from '../blocks/CTA';              
+import { Testimonial } from '../blocks/Testimonial';
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
